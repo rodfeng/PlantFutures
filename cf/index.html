@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/png" href="image/leaf-logo-green.jpg">
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <script src="./javascript/bootstrap.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="row">
+            <h1 class="mt-5 mb-5 text-center" style="font-family: Barlow0;">FOODPRINT CALCULATOR</h1>
+            <div class="row mb-2 justify-content-center">
+                <div class="col">
+                    <p class="lead text-center" style="font-family: Barlow1;"><br></p>
+                </div>
+            </div>
+        </header>
+        <main id="main0">
+            <h2 class="mt-5 text-center" style="font-family: Barlow1;">Step 1 of 3: Animal Products</h2>
+            <p class="mb-2 lead text-center" style="font-family: Barlow2;"><br></p>
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <div class="row mt-4">
+                        <div class="col-3 text-center" style="font-family: Barlow1;">BEEF<br>(3 oz / serving)</div>
+                        <div class="col-7"
+                            style="display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;">
+                            <input type="range" class="form-range" min="0" max="6" step="1" id="beef">
+                        </div>
+                        <div class="col"
+                            style="display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;"
+                            id="jguo0">
+                        </div>
+                    </div>
+                    <!-- CHICKEN<br>(3 oz / serving) -->
+                    <div class="row mt-4">
+                        <div class="col-3 text-center" style="font-family: Barlow1;">CHICKEN<br>(3 oz / serving)</div>
+                        <div class="col-7"
+                            style="display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;">
+                            <input type="range" class="form-range" min="0" max="6" step="1" id="chicken">
+                        </div>
+                        <div class="col"
+                            style="display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;"
+                            id="jguo1">
+                        </div>
+                    </div>
+                    <!-- PORK<br>(3 oz / serving) -->
+                    <div class="row mt-4">
+                        <div class="col-3 text-center" style="font-family: Barlow1;">PORK<br>(3 oz / serving)</div>
+                        <div class="col-7"
+                            style="display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;">
+                            <input type="range" class="form-range" min="0" max="6" step="1" id="pork">
+                        </div>
+                        <div class="col"
+                            style="display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;"
+                            id="jguo2">
+                        </div>
+                    </div>
+                    <!-- FISH & SEAFOOD<br>(3 oz / serving) -->
+                    <div class="row mt-4">
+                        <div class="col-3 text-center" style="font-family: Barlow1;">SEAFOOD<br>(3 oz /
+                            serving)
+                        </div>
+                        <div class="col-7"
+                            style="display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;">
+                            <input type="range" class="form-range" min="0" max="6" step="1" id="fish">
+                        </div>
+                        <div class="col"
+                            style="display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;"
+                            id="jguo3">
+                        </div>
+                    </div>
+                    <!-- EGGS<br>(1 egg) -->
+                    <div class="row mt-4">
+                        <div class="col-3 text-center" style="font-family: Barlow1;">EGGS<br>(1 egg)
+                        </div>
+                        <div class="col-7"
+                            style="display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;">
+                            <input type="range" class="form-range" min="0" max="6" step="1" id="eggs">
+                        </div>
+                        <div class="col"
+                            style="display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;"
+                            id="jguo4">
+                        </div>
+                    </div>
+                    
+                    <!-- MILK & YOGURT<br>(1 cup / serving) -->
+                    <div class="row mt-4">
+                        <div class="col-3 text-center" style="font-family: Barlow1;">MILK & YOGURT<br>(1 cup / serving)
+                        </div>
+                        <div class="col-7"
+                            style="display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;">
+                            <input type="range" class="form-range" min="0" max="6" step="1" id="milk">
+                        </div>
+                        <div class="col"
+                            style="display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;"
+                            id="jguo5">
+                        </div>
+                    </div>
+                    <!-- CHEESE<br>(2 oz / serving) -->
+                    <div class="row mt-4">
+                        <div class="col-3 text-center" style="font-family: Barlow1;">CHEESE<br>(2 oz / serving)</div>
+                        <div class="col-7"
+                            style="display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;">
+                            <input type="range" class="form-range" min="0" max="6" step="1" id="cheese">
+                        </div>
+                        <div class="col"
+                            style="display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;"
+                            id="jguo6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <main id="main1">
+            <!-- Step 2 of 3: Plant-Based Foods -->
+            <h2 class="text-center mt-5" style="font-family: Barlow1;">Step 2 of 3: Plant-Based Foods</h2>
+            <p class="mb-2 lead text-center" style="font-family: Barlow2;"><br></p>
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <div class="row mt-4">
+                        <!-- BEANS & LEGUMES<br>(0.5 cup cooked / serving) -->
+                        <div class="col-3 text-center" style="font-family: Barlow1;">BEANS & LEGUMES<br>(0.5 cup cooked
+                            /
+                            serving)</div>
+                        <div class="col-7"
+                            style="display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;">
+                            <input type="range" class="form-range" min="0" max="6" step="1" id="beans">
+                        </div>
+                        <div class="col"
+                            style="display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;"
+                            id="jguo7">
+                        </div>
+                    </div>
+                    <!-- FRUITS<br>(1 apple or 5 oz / serving) -->
+                    <div class="row mt-4">
+                        <div class="col-3 text-center" style="font-family: Barlow1;">FRUITS<br>(1 apple or 5 oz /
+                            serving)
+                        </div>
+                        <div class="col-7"
+                            style="display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;">
+                            <input type="range" class="form-range" min="0" max="6" step="1" id="fruits">
+                        </div>
+                        <div class="col"
+                            style="display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;"
+                            id="jguo8">
+                        </div>
+                    </div>
+                    <!-- VEGETABLES<br>(1 cup / serving) -->
+                    <div class="row mt-4">
+                        <div class="col-3 text-center" style="font-family: Barlow1;">VEGETABLES<br>(1 cup / serving)
+                        </div>
+                        <div class="col-7"
+                            style="display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;">
+                            <input type="range" class="form-range" min="0" max="6" step="1" id="vegetables">
+                        </div>
+                        <div class="col"
+                            style="display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;"
+                            id="jguo9">
+                        </div>
+                    </div>
+                    <!-- WHEAT & GRAINS<br>(1 slice bread, 0.5c oats) -->
+                    <div class="row mt-4">
+                        <div class="col-3 text-center" style="font-family: Barlow1;">WHEAT & GRAINS<br>(1 slice bread,
+                            0.5c oats)</div>
+                        <div class="col-7"
+                            style="display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;">
+                            <input type="range" class="form-range" min="0" max="6" step="1" id="wheat">
+                        </div>
+                        <div class="col"
+                            style="display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;"
+                            id="jguo10">
+                        </div>
+                    </div>
+                    <!-- RICE<br>(0.5 cup cooked / serving) -->
+                    <div class="row mt-4">
+                        <div class="col-3 text-center" style="font-family: Barlow1;">RICE<br>(0.5 cup cooked / serving)
+                        </div>
+                        <div class="col-7"
+                            style="display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;">
+                            <input type="range" class="form-range" min="0" max="6" step="1" id="rice">
+                        </div>
+                        <div class="col"
+                            style="display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;"
+                            id="jguo11">
+                        </div>
+                    </div>
+                    <!-- FATS & OILS<br>(1 tbsp oil, 1 bag of chips) -->
+                    <div class="row mt-4">
+                        <div class="col-3 text-center" style="font-family: Barlow1;">FATS & OILS<br>(1 tbsp oil, 1 bag
+                            of
+                            chips)</div>
+                        <div class="col-7"
+                            style="display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;">
+                            <input type="range" class="form-range" min="0" max="6" step="1" id="fats">
+                        </div>
+                        <div class="col"
+                            style="display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;"
+                            id="jguo12">
+                        </div>
+                    </div>
+                    <!-- NUTS & SEEDS<br>(0.25 cup / serving) -->
+                    <div class="row mt-4">
+                        <div class="col-3 text-center" style="font-family: Barlow1;">NUTS & SEEDS<br>(0.25 cup /
+                            serving)
+                        </div>
+                        <div class="col-7"
+                            style="display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;">
+                            <input type="range" class="form-range" min="0" max="6" step="1" id="nuts">
+                        </div>
+                        <div class="col"
+                            style="display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;"
+                            id="jguo13">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <main id="main2">
+            <h2 class="mt-5 text-center" style="font-family: Barlow1;">Step 3 of 3: More About You (Optional)</h2>
+            <p class="mb-2 lead text-center" style="font-family: Barlow2;">
+                Help researchers at Harvard help the planet by sharing anonymously.<br>Click here ​to review the privacy
+                policy. If you currently reside in the EU, skip this step.</p>
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <h4 class="mt-3 mb-3 text-center" style="font-family: Barlow1;">DIETARY PREFERENCE</h4>
+                    <select class="form-select form-select-lg" aria-label=".form-select-lg" id="diet">
+                        <option value="n/a" selected>Prefer Not to Say</option>
+                        <option value="omnivore">Omnivore</option>
+                        <option value="vegetarian">Vegetarian</option>
+                        <option value="LO-vegetarian">Lacto-ovo Vegetarian</option>
+                        <option value="mediterranean">Mediterranean</option>
+                        <option value="kosher">Kosher</option>
+                        <option value="halal">Halal</option>
+                        <option value="vegan">Vegan</option>
+                    </select>
+                    <!-- GENDER -->
+                    <h4 class="mt-3 mb-3 text-center" style="font-family: Barlow1;">GENDER</h4>
+                    <select class="form-select form-select-lg" aria-label=".form-select-lg" id="gender">
+                        <option value="n/a" selected>Prefer Not to Say</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <!-- AGE RANGE -->
+                    <h4 class="mt-3 mb-3 text-center" style="font-family: Barlow1;">AGE RANGE</h4>
+                    <select class="form-select form-select-lg" aria-label=".form-select-lg" id="age">
+                        <option value="n/a" selected>Prefer Not to Say</option>
+                        <option value="18-22">18-22</option>
+                        <option value="22-29">22-29</option>
+                        <option value="30-39">30-39</option>
+                        <option value="40-49">40-49</option>
+                        <option value="50-59">50-59</option>
+                        <option value="60+">60+</option>
+                    </select>
+                    <!-- ETHNICITY -->
+                    <h4 class="mt-3 mb-3 text-center" style="font-family: Barlow1;">ETHNICITY</h4>
+                    <select class="form-select form-select-lg" aria-label=".form-select-lg" id="ethnicity">
+                        <option value="n/a" selected>Prefer Not to Say</option>
+                        <option value="white">White</option>
+                        <option value="african american">Black or African American</option>
+                        <option value="hispanic">Hispanic or Latino</option>
+                        <option value="asian">Asian</option>
+                        <option value="native american">Native American</option>
+                        <option value="other">Other Ethnicity</option>
+                    </select>
+                    <!-- ANNUAL HOUSEHOLD INCOME -->
+                    <h4 class="mt-3 mb-3 text-center" style="font-family: Barlow1;">ANNUAL HOUSEHOLD INCOME</h4>
+                    <select class="form-select form-select-lg" aria-label=".form-select-lg" id="income">
+                        <option value="n/a" selected>Prefer Not to Say</option>
+                        <option value="$0-$10,000">$0-$10,000</option>
+                        <option value="$10,000-$40,000">$10,001-$40,000</option>
+                        <option value="$40,000-$80,000">$40,001-$80,000</option>
+                        <option value="$80,000-$160,000">$80,001-$160,000</option>
+                        <option value="$160,000-$250,000">$160,001-$250,000</option>
+                        <option value="$250,000+">$250,000+</option>
+                    </select>
+                    <!-- COUNTRY -->
+                    <h4 class="mt-3 mb-3 text-center" style="font-family: Barlow1;">COUNTRY</h4>
+                    <!-- 五大洲 -->
+                    <select class="form-select form-select-lg" aria-label=".form-select-lg" id="country">
+                        <option value="n/a" selected>Prefer Not to Say</option>
+                        <option value="asia">Asia</option>
+                        <option value="africa">Africa</option>
+                        <option value="europe">Europe</option>
+                        <option value="north america">North America</option>
+                        <option value="south america">South America</option>
+                        <option value="oceania">Oceania</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mt-4 mb-3 justify-content-center">
+                <div class="col-10">
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary" type="button" id="btn2">Button</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <main id="main3"></main>
+        <footer>
+            <div class="row mt-4 mb-3">
+                <div class="col-5 text-center">
+                    <!-- 上一页 英语 -->
+                    <button type="button" class="btn btn-primary" id="btn0">last page</button>
+                </div>
+                <div class="col-5 text-center">
+                    <button type="button" class="btn btn-primary" id="btn1">next page</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        const main0 = document.getElementById('main0');
+        const main1 = document.getElementById('main1');
+        const main2 = document.getElementById('main2');
+        const main3 = document.getElementById('main3');
+        const beef = document.getElementById('beef');
+        const jguo0 = document.getElementById('jguo0');
+        const chicken = document.getElementById('chicken');
+        const jguo1 = document.getElementById('jguo1');
+        const pork = document.getElementById('pork');
+        const jguo2 = document.getElementById('jguo2');
+        const fish = document.getElementById('fish');
+        const jguo3 = document.getElementById('jguo3');
+        const eggs = document.getElementById('eggs');
+        const jguo4 = document.getElementById('jguo4');
+        const milk = document.getElementById('milk');
+        const jguo5 = document.getElementById('jguo5');
+        const cheese = document.getElementById('cheese');
+        const jguo6 = document.getElementById('jguo6');
+        const beans = document.getElementById('beans');
+        const jguo7 = document.getElementById('jguo7');
+        const fruits = document.getElementById('fruits');
+        const jguo8 = document.getElementById('jguo8');
+        const vegetables = document.getElementById('vegetables');
+        const jguo9 = document.getElementById('jguo9');
+        const wheat = document.getElementById('wheat');
+        const jguo10 = document.getElementById('jguo10');
+        const rice = document.getElementById('rice');
+        const jguo11 = document.getElementById('jguo11');
+        const fats = document.getElementById('fats');
+        const jguo12 = document.getElementById('jguo12');
+        const nuts = document.getElementById('nuts');
+        const jguo13 = document.getElementById('jguo13');
+        const btn0 = document.getElementById('btn0');
+        const btn1 = document.getElementById('btn1');
+        const btn2 = document.getElementById('btn2');
+        let int0 = 0;
+        beef.value = 0;
+        chicken.value = 0;
+        pork.value = 0;
+        fish.value = 0;
+        eggs.value = 0;
+        milk.value = 0;
+        cheese.value = 0;
+        beans.value = 0;
+        fruits.value = 0;
+        vegetables.value = 0;
+        wheat.value = 0;
+        rice.value = 0;
+        fats.value = 0;
+        nuts.value = 0;
+        jguo0.innerHTML = beef.value;
+        jguo1.innerHTML = chicken.value;
+        jguo2.innerHTML = pork.value;
+        jguo3.innerHTML = fish.value;
+        jguo4.innerHTML = eggs.value;
+        jguo5.innerHTML = milk.value;
+        jguo6.innerHTML = cheese.value;
+        jguo7.innerHTML = beans.value;
+        jguo8.innerHTML = fruits.value;
+        jguo9.innerHTML = vegetables.value;
+        jguo10.innerHTML = wheat.value;
+        jguo11.innerHTML = rice.value;
+        jguo12.innerHTML = fats.value;
+        jguo13.innerHTML = nuts.value;
+        const fun0 = (cshu0, cshu1) => {
+            cshu0.addEventListener('input', () => {
+                cshu1.innerHTML = cshu0.value;
+            })
+        }
+        fun0(beef, jguo0);
+        fun0(chicken, jguo1);
+        fun0(pork, jguo2);
+        fun0(fish, jguo3);
+        fun0(eggs, jguo4);
+        fun0(milk, jguo5);
+        fun0(cheese, jguo6);
+        fun0(beans, jguo7);
+        fun0(fruits, jguo8);
+        fun0(vegetables, jguo9);
+        fun0(wheat, jguo10);
+        fun0(rice, jguo11);
+        fun0(fats, jguo12);
+        fun0(nuts, jguo13);
+        main1.style.display = 'none';
+        main2.style.display = 'none';
+        main3.style.display = 'none';
+        btn0.addEventListener('click', () => {
+            switch (int0) {
+                case 1:
+                    main0.style.display = 'block';
+                    main1.style.display = 'none';
+                    main2.style.display = 'none';
+                    main3.style.display = 'none';
+                    int0--;
+                    break;
+                case 2:
+                    main0.style.display = 'none';
+                    main1.style.display = 'block';
+                    main2.style.display = 'none';
+                    main3.style.display = 'none';
+                    int0--;
+                    break;
+                case 3:
+                    main0.style.display = 'none';
+                    main1.style.display = 'none';
+                    main2.style.display = 'block';
+                    main3.style.display = 'none';
+                    int0--;
+                    break;
+                default:
+                    break;
+            }
+        })
+        btn1.addEventListener('click', () => {
+            switch (int0) {
+                case 0:
+                    main0.style.display = 'none';
+                    main1.style.display = 'block';
+                    main2.style.display = 'none';
+                    main3.style.display = 'none';
+                    int0++;
+                    break;
+                case 1:
+                    main0.style.display = 'none';
+                    main1.style.display = 'none';
+                    main2.style.display = 'block';
+                    main3.style.display = 'none';
+                    int0++;
+                    break;
+                // case 2:
+                //     main0.style.display = 'none';
+                //     main1.style.display = 'none';
+                //     main2.style.display = 'none';
+                //     main3.style.display = 'block';
+                //     int0++;
+                //     break;
+                default:
+                    break;
+            }
+        })
+        let animal;
+        let plant;
+        btn2.addEventListener('click', () => {
+            animal = parseInt(beef.value) * 3 + parseInt(chicken.value) * 3 + parseInt(pork.value) * 3 + parseInt(fish.value) * 3.5 + parseInt(eggs.value) + parseInt(milk.value) + parseInt(cheese.value) * 2;
+            plant = parseInt(beans.value) * 0.5 + parseInt(fruits.value) + parseInt(vegetables.value) + parseInt(wheat.value) * 0.5 + parseInt(rice.value) * 0.5 + parseInt(fats.value) + parseInt(nuts.value) * 0.25;
+            animal1 = animal * 365;
+            plant1 = plant * 365;
+            main0.style.display = 'none';
+            main1.style.display = 'none';
+            main2.style.display = 'none';
+            main3.style.display = 'block';
+            main3.innerHTML = "";
+            main3.innerHTML = `
+            <div class="row mt-4 mb-3 justify-content-center">
+                <div clsaa="col-10">
+                    <p class="lead text-center" style="font-family: Barlow1;">The approximation of your carbon footprint from meats is ${animal}g and from plants is ${plant}g.</p>
+                    <p class="lead text-center" style="font-family: Barlow1;"> 
+                        Based on the daily consumption, there will ${animal1}g from meats and ${plant1}g from plants.</p>
+                </div>
+            </div>`;
+        })
+    </script>
+</body>
+
+</html>

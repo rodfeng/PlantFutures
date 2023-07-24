@@ -1,0 +1,39 @@
+/* font/Barlow-Black.ttf */
+@font-face {
+    font-family: 'Barlow0';
+    src: url('../font/Barlow-Black.ttf');
+}
+
+/* Barlow-Medium.ttf */
+@font-face {
+    font-family: 'Barlow1';
+    src: url('../font/Barlow-Medium.ttf');
+}
+
+/* Barlow-Thin.ttf */
+@font-face {
+    font-family: 'Barlow2';
+    src: url('../font/Barlow-Thin.ttf');
+}
+
+header {
+    /* 把pexels-suzy-hazelwood-1098515.jpg设置为背景图 */
+    background-image: url('../image/pexels-suzy-hazelwood-1098515.jpg');
+    /* 设置背景图的位置 */
+    background-position: center;
+    /* 设置背景图的大小 */
+    background-size: cover;
+    /* 设置背景图的重复方式 */
+    background-repeat: no-repeat;
+    /* 设置背景图的固定 */
+    background-attachment: fixed;
+    /* 设置背景图的透明度 */
+    /* opacity: 0.6; */
+}
+
+header h1,
+header p {
+    color: white;
+    /* 黑色描边 */
+    text-shadow: 0 0 20px black;
+}
